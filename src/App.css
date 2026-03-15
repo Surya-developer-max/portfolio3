@@ -1,0 +1,393 @@
+/* ---------------------------------MENU------------------------------------- */
+.close-btn {
+  position: absolute;
+  z-index: 11;
+  top: 10px;
+  right: 10px;
+}
+
+.menu-container {
+  height: 100vh;
+  width: 100%;
+  transform: translateY(-110%);
+  background-color: rgb(244, 138, 62);
+  z-index: 10;
+  position: absolute;
+}
+
+.items {
+  height: 100px;
+  width: 100vw;
+  margin: 1px 0px 0px 0px;
+  background-color: whitesmoke;
+  overflow: hidden;
+  background-color: rgb(244, 138, 62);
+  position: relative;
+  border-top: 0.5px solid rgb(56, 56, 56);
+  margin: 0px;
+  padding: 0px;
+}
+
+.items p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0px;
+  padding: 0px;
+  font-size: 5vw;
+  font-weight: lighter;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 9;
+}
+
+.Brand-name {
+  top: 15px;
+  position: absolute;
+}
+
+/* -------------------------------------Home--------------------------------- */
+
+.main-container {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.banner {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  background-color: #212020;
+  border-radius: 10px;
+}
+
+.ball-curser {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  z-index: 8;
+  left: -1%;
+  top: -2%;
+  transform: translate(-100px, -100px);
+  background-color: rgba(255, 255, 255, 0.315);
+  backdrop-filter: blur(2px);
+  border-radius: 50%;
+}
+
+.img-div img {
+  top: 50px;
+  width: 70px;
+  position: absolute;
+}
+
+.text-container {
+  position: relative;
+  top: 90px;
+  display: flex;
+}
+
+.sadi-text p,.sadi-text2 p {
+  margin: 0px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  word-spacing: 20px;
+  font-size: 15px;
+}
+
+.sadi-text,.sadi-text2 {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-text h2 {
+  font-size: 5vw;
+  margin: 0px;
+  font-weight: 50;
+  line-height: 150px;
+}
+
+.s-text-div {
+  height: 100%;
+  width: 200px;
+  position: absolute;
+  z-index: 9;
+
+}
+
+.main-text h1 {
+  margin: 0px;
+  font-size: 500px;
+  position: absolute;
+  left: -30px;
+  top: -50px;
+  z-index: -5;
+  color: rgba(102, 51, 153, 0);
+  -webkit-text-stroke: 1px rgba(168, 168, 168, 0.645);
+  mask-image: none;
+}
+
+
+.white-scroll,
+.black-scroll {
+  width: 110%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+}
+
+.white-scroll {
+  color: #000000;
+  transform: rotate(20deg);
+  background-color: rgb(233, 233, 233);
+  right: -25%;
+  top: 100px;
+}
+
+.black-scroll {
+  color: #ffffff;
+  transform: rotate(-15deg);
+  background-color: rgb(22, 23, 34);
+  bottom: 150px;
+  left: -20px;
+}
+
+.group p {
+  margin: 0px 100px;
+}
+
+.group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: scroll 40s linear infinite;
+}
+
+.img2 {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+
+.img2 img {
+  width: 70px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0)
+  }
+
+  100% {
+    transform: translateX(-100%)
+  }
+}
+
+.red-round {
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+/* --------------------------------------ABOUT---------------------------------- */
+.About-text {
+  position: relative;
+  top: 90px;
+  left: 130px;
+  font-size: 60px;
+}
+
+.About-text::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: white;
+  bottom: 0px;
+  left: 0px;
+}
+
+.main-text h3 {
+  position: absolute;
+  top: 50px;
+  left: 150px;
+}
+
+.main-text .about-h1 {
+  left: -50px;
+  top: -90px;
+}
+
+.main-text p {
+  position: absolute;
+  top: 80px;
+  left: 150px;
+  width: 80%;
+  line-height: 60px;
+  margin: 20px 0px;
+}
+
+/* -----------------------------------Contact------------------------------------- */
+.contact-items {
+  position: relative;
+  width: 80%;
+  height: 100px;
+  margin: 5px;
+  border: 0.5px solid rgb(123, 123, 123);
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 1s linear;
+}
+
+.contact-items h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s linear;
+
+}
+
+.contact-items h5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s linear;
+
+  opacity: 0;
+}
+
+.contact-items:hover h5 {
+  opacity: 1;
+}
+
+.contact-items:hover h1 {
+  opacity: 0;
+}
+
+/* ------------------------------MEDIA QUERY------------------------------------- */
+
+@media screen and (max-width:800px) {
+  .main-container {
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-container {
+    top: 0px;
+  }
+
+  .img-div img {
+    width: 40px;
+  }
+
+  .main-text h2 {
+    line-height: 50px;
+    font-size: 6vw;
+  }
+
+  .main-text h1 {
+    margin: 0px;
+    font-size: 200px;
+    position: absolute;
+    left: -40px;
+    top: -40px;
+    z-index: -5;
+    color: rgba(102, 51, 153, 0);
+    -webkit-text-stroke: 0.5px rgba(168, 168, 168, 0.645);
+  }
+
+  .sadi-text {
+    width: 100px;
+    left: 0px;
+
+  }
+
+  .sadi-text p {
+    margin: 0px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    word-spacing: 20px;
+    font-size: 8px;
+  }
+
+  .white-scroll {
+    width: 150%;
+    height: 40px;
+    transform: rotate(10deg);
+    background-color: whitesmoke;
+    position: absolute;
+    top: 30%;
+    left: -50px;
+  }
+
+  .black-scroll {
+    height: 40px;
+  }
+
+  /*--------------------------- about--------------------------- */
+  .main-text h3 {
+    position: absolute;
+    margin: 0px;
+    font-size: 15px;
+  }
+
+  .main-text .about-h1 {
+    left: -30px;
+    top: -30px;
+  }
+
+  .About-text {
+    top: 0px;
+    font-size: 50px;
+    left: 50px;
+  }
+
+  .sadi-text2 {
+    width: 100px;
+    left: 0px;
+  }
+
+  .sadi-text2 p {
+    margin: 0px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    word-spacing: 20px;
+    font-size: 8px;
+    left: -90px;
+  }
+
+  .main-text h3 {
+    left: 90px;
+    width: 100%;
+  }
+
+  .main-text p {
+    position: absolute;
+    left: 90px;
+    line-height: 30px;
+    padding: 5px;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,9 @@
+body{
+    color: #fff;
+    background-color: #000000ed;
+    overflow-x: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
