@@ -2,7 +2,6 @@ import gsap from "gsap";
 import { Routes, Route, BrowserRouter, Link } from "react-router-dom";
 import Home from "./Home";
 import Contact from './contact.jsx'
-import About from '../components/about.jsx'
 export default function menu() {
     function handleMenu() {
         console.log("hii")
@@ -43,11 +42,6 @@ export default function menu() {
                                 <p>Home</p>
                             </Link>
                         </div>
-                        <div className="items">
-                            <Link to="/about" className="text-decoration-none text-light" onClick={() => { handleClose() }}>
-                                <p>About</p>
-                            </Link>
-                        </div>
                         <div className="items ">
                             <a href="https://suryaportfoliodemo.netlify.app/" className="text-decoration-none text-light" >
                                 <p>Portfolio</p>
@@ -63,7 +57,6 @@ export default function menu() {
                 </div>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
             </BrowserRouter>

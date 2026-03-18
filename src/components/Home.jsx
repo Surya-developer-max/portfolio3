@@ -91,6 +91,9 @@ export default function home() {
             rotate: 0,
         })
     }
+    // setInterval(()=>{
+    //     console.log("hiiii")
+    // },1000)
     return (
         <>
             <div className="main-container" onMouseMove={(e) => { handelMouseMover(e) }} onMouseLeave={() => { handlemouseLeave() }}>
